@@ -29,6 +29,8 @@ public class Login extends javax.swing.JFrame {
 
         CampoEmailLogin = new javax.swing.JTextField();
         CampoSenhaLogin = new javax.swing.JPasswordField();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -37,7 +39,12 @@ public class Login extends javax.swing.JFrame {
 
         CampoEmailLogin.setBackground(new java.awt.Color(255, 227, 205));
         CampoEmailLogin.setBorder(null);
-        getContentPane().add(CampoEmailLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 320, 430, 30));
+        CampoEmailLogin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CampoEmailLoginActionPerformed(evt);
+            }
+        });
+        getContentPane().add(CampoEmailLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 320, 470, 40));
 
         CampoSenhaLogin.setBackground(new java.awt.Color(255, 227, 205));
         CampoSenhaLogin.setBorder(null);
@@ -46,7 +53,35 @@ public class Login extends javax.swing.JFrame {
                 CampoSenhaLoginActionPerformed(evt);
             }
         });
-        getContentPane().add(CampoSenhaLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 430, 430, 30));
+        getContentPane().add(CampoSenhaLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 430, 470, 40));
+
+        jButton1.setBackground(new java.awt.Color(255, 214, 182));
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/src_img/NÃO POSSUO CADASTRO.png"))); // NOI18N
+        jButton1.setBorder(null);
+        jButton1.setBorderPainted(false);
+        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton1.setHideActionText(true);
+        jButton1.setOpaque(false);
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 520, 270, 50));
+
+        jButton2.setBackground(new java.awt.Color(255, 214, 182));
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/src_img/INICIAR SESSÃO.png"))); // NOI18N
+        jButton2.setBorder(null);
+        jButton2.setBorderPainted(false);
+        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton2.setHideActionText(true);
+        jButton2.setOpaque(false);
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 520, 180, 50));
 
         jLabel1.setBackground(new java.awt.Color(255, 227, 205));
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/src_img/Login.png"))); // NOI18N
@@ -60,6 +95,18 @@ public class Login extends javax.swing.JFrame {
     private void CampoSenhaLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CampoSenhaLoginActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_CampoSenhaLoginActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void CampoEmailLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CampoEmailLoginActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CampoEmailLoginActionPerformed
 
     /**
      * @param args the command line arguments
@@ -100,6 +147,8 @@ public class Login extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField CampoEmailLogin;
     private javax.swing.JPasswordField CampoSenhaLogin;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }

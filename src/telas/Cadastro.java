@@ -31,6 +31,7 @@ public class Cadastro extends javax.swing.JFrame {
         CampoNomeCadastro1 = new javax.swing.JTextField();
         CampoSenhaCadastro = new javax.swing.JPasswordField();
         CampoConfirmaSenha = new javax.swing.JPasswordField();
+        jButton1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -39,11 +40,11 @@ public class Cadastro extends javax.swing.JFrame {
 
         CampoEmailCadastro.setBackground(new java.awt.Color(255, 227, 205));
         CampoEmailCadastro.setBorder(null);
-        getContentPane().add(CampoEmailCadastro, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 240, 430, 30));
+        getContentPane().add(CampoEmailCadastro, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 240, 470, 40));
 
         CampoNomeCadastro1.setBackground(new java.awt.Color(255, 227, 205));
         CampoNomeCadastro1.setBorder(null);
-        getContentPane().add(CampoNomeCadastro1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 150, 430, 30));
+        getContentPane().add(CampoNomeCadastro1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 150, 470, 40));
 
         CampoSenhaCadastro.setBackground(new java.awt.Color(255, 227, 205));
         CampoSenhaCadastro.setBorder(null);
@@ -52,7 +53,7 @@ public class Cadastro extends javax.swing.JFrame {
                 CampoSenhaCadastroActionPerformed(evt);
             }
         });
-        getContentPane().add(CampoSenhaCadastro, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 330, 430, 30));
+        getContentPane().add(CampoSenhaCadastro, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 330, 470, 40));
 
         CampoConfirmaSenha.setBackground(new java.awt.Color(255, 227, 205));
         CampoConfirmaSenha.setBorder(null);
@@ -61,7 +62,21 @@ public class Cadastro extends javax.swing.JFrame {
                 CampoConfirmaSenhaActionPerformed(evt);
             }
         });
-        getContentPane().add(CampoConfirmaSenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 420, 430, 30));
+        getContentPane().add(CampoConfirmaSenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 420, 470, 40));
+
+        jButton1.setBackground(new java.awt.Color(255, 214, 182));
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/src_img/CADASTRAR.png"))); // NOI18N
+        jButton1.setBorder(null);
+        jButton1.setBorderPainted(false);
+        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton1.setHideActionText(true);
+        jButton1.setOpaque(false);
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 490, 150, 50));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/src_img/Cadastro.png"))); // NOI18N
         jLabel1.setText("jLabel1");
@@ -78,6 +93,10 @@ public class Cadastro extends javax.swing.JFrame {
     private void CampoConfirmaSenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CampoConfirmaSenhaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_CampoConfirmaSenhaActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -119,6 +138,7 @@ public class Cadastro extends javax.swing.JFrame {
     private javax.swing.JTextField CampoEmailCadastro;
     private javax.swing.JTextField CampoNomeCadastro1;
     private javax.swing.JPasswordField CampoSenhaCadastro;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
